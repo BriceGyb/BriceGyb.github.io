@@ -1,0 +1,74 @@
+---
+import Icon from './Icon.astro';
+---
+
+<section class="box skills">
+	<div class="stack gap-2 lg:gap-4">
+		<Icon icon="terminal-window" color="var(--accent-regular)" size="2.5rem" gradient />
+		<h2> Most used Tools:</h2>
+		<strong>Front-end :</strong> <br>
+		HTML & CSS / Tailwind / Flutter / Vue.js / Nuxt.js  
+		<br>
+		<strong>Back-end :</strong> <br>
+		Node.js / Laravel / Django / Spring Boot / Flask  
+		<br>
+		<strong>DevOps & Cloud :</strong> <br>
+		Docker / Kubernetes / CI/CD (GitHub Actions, GitLab CI) / AWS / Azure / Nginx / Terraform  
+		<br>
+		<strong>Artificial Intelligence & Data Engineering :</strong> <br>
+		Python (Pandas, NumPy, Scikit-learn, TensorFlow, PyTorch) / SQL (PostgreSQL, MySQL) / Apache Spark / Kafka / Airflow / NLP / Computer Vision  
+	</div>
+	<div class="stack gap-2 lg:gap-4">
+		<Icon icon="trophy" color="var(--accent-regular)" size="2.5rem" gradient />
+		<h2>Team Player</h2>
+		<p> work in a team, engage in pair programming, advise, and share are values that are dear to my heart
+		</p>
+	</div>
+	<div class="stack gap-2 lg:gap-4">
+		<Icon icon="strategy" color="var(--accent-regular)" size="2.5rem" gradient />
+		<h2>Experience</h2>
+		<p> With 3 years of experience, I have a 360-degree vision, gaining a comprehensive understanding of projects and technical challenges.
+		</p>
+	</div>
+</section>
+
+<style>
+	.box {
+		border: 1px solid var(--gray-800);
+		border-radius: 0.75rem;
+		padding: 1.5rem;
+		background-color: var(--gray-999_40);
+		box-shadow: var(--shadow-sm);
+	}
+
+	.skills {
+		display: flex;
+		flex-direction: column;
+		gap: 3rem;
+	}
+
+	.skills h2 {
+		font-size: var(--text-lg);
+	}
+
+	.skills p {
+		color: var(--gray-400);
+	}
+
+	@media (min-width: 50em) {
+		.box {
+			border-radius: 1.5rem;
+			padding: 2.5rem;
+		}
+
+		.skills {
+			display: grid;
+			grid-template-columns: repeat(3, 1fr);
+			gap: 5rem;
+		}
+
+		.skills h2 {
+			font-size: var(--text-2xl);
+		}
+	}
+</style>
